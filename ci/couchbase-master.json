@@ -1,7 +1,10 @@
-[
-    {
+[{
         "ParameterKey": "AvailabilityZones",
-        "ParameterValue": "$[taskcat_genaz_2]"
+        "ParameterValue": "$[taskcat_getaz_2]"
+    },
+    {
+        "ParameterKey": "EncryptEBS",
+        "ParameterValue": "true"
     },
     {
         "ParameterKey": "InstanceType",
@@ -12,12 +15,32 @@
         "ParameterValue": "tonynv"
     },
     {
+        "ParameterKey": "License",
+        "ParameterValue": "HourlyPricing"
+    },
+    {
+        "ParameterKey": "NumberOfAZs",
+        "ParameterValue": "2"
+    },
+    {
+        "ParameterKey": "Password",
+        "ParameterValue": "$[taskcat_genpass_8A]"
+    },
+    {
         "ParameterKey": "PublicSubnet1CIDR",
         "ParameterValue": "10.0.128.0/20"
     },
     {
         "ParameterKey": "PublicSubnet2CIDR",
         "ParameterValue": "10.0.144.0/20"
+    },
+    {
+        "ParameterKey": "PublicSubnet3CIDR",
+        "ParameterValue": "10.0.160.0/20"
+    },
+    {
+        "ParameterKey": "PublicSubnet4CIDR",
+        "ParameterValue": "10.0.176.0/20"
     },
     {
         "ParameterKey": "QSS3BucketName",
@@ -29,18 +52,18 @@
     },
     {
         "ParameterKey": "RemoteAccessCIDR",
-        "ParameterValue": "0.0.0.0/0"
+        "ParameterValue": "64.85.247.98/32"
     },
     {
         "ParameterKey": "Username",
-        "ParameterValue": "couchbase"
-    },
-    {
-        "ParameterKey": "Password",
-        "ParameterValue": "$[taskcat_genpass_8A]"
+        "ParameterValue": "admin"
     },
     {
         "ParameterKey": "VPCCIDR",
         "ParameterValue": "10.0.0.0/16"
+    },
+    {
+        "ParameterKey": "XDCRCIDR",
+        "ParameterValue": "0.0.0.0/0"
     }
 ]
