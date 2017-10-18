@@ -2,7 +2,7 @@ global:
   marketplace-ami: false
   owner: quickstart-eng@amazon.com
   qsname: quickstart-couchbase
-#  s3bucket: tonynv
+  s3bucket: tonynv
   regions:
     - ap-northeast-1
     - ap-northeast-2
@@ -20,8 +20,15 @@ global:
   reporting: true
  
 tests:
+  #couchbase-novpc:
+  #  parameter_input: couchbase-novpc.json
+  #  template_file: couchbase.template
+  #  regions:
+  #   - us-east-1
   couchbase-master:
-    parameter_input: quickstart-couchbase-input.json
-    template_file: quickstart-couchbase-master.template
+    parameter_input: couchbase-master.json
+    template_file: couchbase-master.template
     regions:
      - us-east-1
+
+
