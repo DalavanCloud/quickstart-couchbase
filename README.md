@@ -7,7 +7,7 @@ This Quick Start reference deployment guide includes architectural consideration
 
 The guide is for IT infrastructure architects, administrators, and DevOps professionals who are planning to implement or extend their Couchbase workloads on the AWS cloud.
 
-The following links are for your convenience. Before you launch the Quick Start, please review the architecture, configuration, network security, and other considerations discussed in this guide.
+Before you launch the Quick Start, please review the architecture, configuration, network security, and other considerations discussed in this guide.
 
 ## Architecture Design
 Deployment Guide:
