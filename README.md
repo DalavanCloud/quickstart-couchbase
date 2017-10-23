@@ -1,6 +1,6 @@
 # Couchbase on the AWS Cloud
-> Couchbase Server Enterprise Edition version 5.0
-> Couchbase Sync Gateway Enterprise Edition version  1.4.1-3
+> Couchbase Server Enterprise Edition version 5.0.0
+> Couchbase Sync Gateway Enterprise Edition version  1.5.0
 
 ## Deployment Options
 AWS Quick Start Team
@@ -12,12 +12,15 @@ The guide is for IT infrastructure architects, administrators, and DevOps profes
 The following links are for your convenience. Before you launch the Quick Start, please review the architecture, configuration, network security, and other considerations discussed in this guide.
 
 ## Architecture Design
-Deployment Guide: PDF https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase%2BQuick%2BStart%2BGuide.pdf Word https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase%2BQuick%2BStart%2BGuide.docx
+Deployment Guide:
+* PDF https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase%2BQuick%2BStart%2BGuide.pdf
+* Word https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase%2BQuick%2BStart%2BGuide.docx
+
 ![Quick Start Couchbase Design Architecture](https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase-Quick+Start+architecture+diagram.png)
 
 ## Change Log
 ### October 2017
-* Added new documentation with architecture design 
+* Added new documentation with architecture design
 * Moved couchbase to private subnet
 * Added bastion submodule
 * Added "EBS encryption" parameter to default yes
