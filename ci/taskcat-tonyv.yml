@@ -20,13 +20,8 @@ global:
   reporting: true
  
 tests:
-  #couchbase-novpc:
-  #  parameter_input: couchbase-novpc.json
-  #  template_file: couchbase.template
-  #  regions:
-  #   - us-east-1
   couchbase-master:
-    parameter_input: couchbase-master.json
+    parameter_input: couchbase-master-tonynv.json
     template_file: couchbase-master.template
     regions:
      - us-east-1

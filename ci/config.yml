@@ -19,9 +19,6 @@ global:
   reporting: true
  
 tests:
-  quickstart-couchbase-master:
-    parameter_input: quickstart-couchbase-master.json
-    template_file: quickstart-couchbase-master.template
-  quickstart-couchbaset-workload:
-    parameter_input: quickstart-couchbase-workload.json
-    template_file: quickstart-couchbase.template
+  couchbase-master:
+    parameter_input: couchbase-master.json
+    template_file: couchbase-master.template
