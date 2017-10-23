@@ -13,8 +13,8 @@ The following links are for your convenience. Before you launch the Quick Start,
 
 ## Architecture Design
 Deployment Guide:
-* PDF https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase%2BQuick%2BStart%2BGuide.pdf
-* Word https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase%2BQuick%2BStart%2BGuide.docx
+* [PDF](https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase%2BQuick%2BStart%2BGuide.pdf)
+* [Word](https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase%2BQuick%2BStart%2BGuide.docx)
 
 ![Quick Start Couchbase Design Architecture](https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase-Quick+Start+architecture+diagram.png)
 
