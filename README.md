@@ -1,20 +1,17 @@
 # Couchbase on the AWS Cloud
+This is the AWS QuickStart for Couchbase.  It contains a Cloud Formation Template (CFT) that creates Autoscaling Groups made up of Virtual Machines running the Couchbase AMIs for two products:
+
 * Couchbase Server Enterprise Edition version 5.0.0
 * Couchbase Sync Gateway Enterprise Edition version  1.5.0
 
-## Deployment Options
-This Quick Start reference deployment guide includes architectural considerations and configuration steps for deploying a Couchbase cluster on the Amazon Web Services (AWS) cloud. It discusses best practices for deploying Couchbase on AWS using services such as Amazon Elastic Compute Cloud (EC2) and Amazon Virtual Private Cloud (VPC). It also provides links to automated AWS CloudFormation Templates (CFT) that you can leverage for your deployment or launch directly into your AWS account.
-
-The guide is for IT infrastructure architects, administrators, and DevOps professionals who are planning to implement or extend their Couchbase workloads on the AWS cloud.
-
-Before you launch the Quick Start, please review the architecture, configuration, network security, and other considerations discussed in this guide.
-
-## Architecture Design
-Deployment Guide:
-* [PDF](https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase%2BQuick%2BStart%2BGuide.pdf)
-* [Word](https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase%2BQuick%2BStart%2BGuide.docx)
+The CFT also configures security groups and disks.  A diagram showing the resulting configuration is below:
 
 ![Quick Start Couchbase Design Architecture](https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase-Quick+Start+architecture+diagram.png)
+
+Before you launch the Quick Start, please review the architecture, configuration, network security, and other considerations discussed in the Deployment Guide.
+
+* [Deployment Guide (PDF)](https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase%2BQuick%2BStart%2BGuide.pdf)
+* [Deployemnt Guide (Word)](https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase%2BQuick%2BStart%2BGuide.docx)
 
 To post feedback, submit feature ideas, or report bugs, use the Issues section of this GitHub repo.
 
