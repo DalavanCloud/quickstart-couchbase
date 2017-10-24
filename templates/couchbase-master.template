@@ -1,6 +1,6 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
-    "Description": "Couchbase + QuickStart VPC (Master Template)",
+    "Description": "Couchbase + QuickStart VPC, Apache 2.0 (Please do not remove) Oct,24,2017 (qs-1nq4cb8l6)",
     "Metadata": {
         "AWS::CloudFormation::Interface": {
             "ParameterGroups": [{
