@@ -44,7 +44,7 @@
     },
     {
         "ParameterKey": "QSS3BucketName",
-        "ParameterValue": "tonynv"
+        "ParameterValue": "$[taskcat_autobucket]"
     },
     {
         "ParameterKey": "QSS3KeyPrefix",
@@ -56,15 +56,15 @@
     },
     {
         "ParameterKey": "ServerDiskSize",
-        "ParameterValue": 100
+        "ParameterValue": "100"
     },
     {
         "ParameterKey": "ServerInstanceCount",
-        "ParameterValue": 4
+        "ParameterValue": "4"
     },
     {
         "ParameterKey": "SyncGatewayInstanceCount",
-        "ParameterValue": 2
+        "ParameterValue": "2"
     },
     {
         "ParameterKey": "Username",
