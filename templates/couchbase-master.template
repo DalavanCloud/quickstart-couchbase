@@ -201,13 +201,13 @@
             "Type": "String"
         },
         "PublicSubnet3CIDR": {
-            "Default": "10.0.160.0/20",
-            "Description": "CIDR block for the private subnet 1 located in Availability Zone 3 (if required)",
+            "Default": "",
+            "Description": "CIDR block for the public subnet 3 located in Availability Zone 3 (if required)",
             "Type": "String"
         },
         "PublicSubnet4CIDR": {
-            "Default": "10.0.176.0/20",
-            "Description": "CIDR block for the private subnet 2 located in Availability Zone 4 (if required)",
+            "Default": "",
+            "Description": "CIDR block for the public subnet 4 located in Availability Zone 4 (if required)",
             "Type": "String"
         },
         "QSS3BucketName": {
