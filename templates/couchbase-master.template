@@ -23,7 +23,7 @@
                     "default": "Amazon EC2 Configuration"
                 },
                 "Parameters": [
-                    "KeyPairName",
+                    "KeyName",
                     "InstanceType"
                 ]
             }, {
@@ -73,6 +73,12 @@
                 "XDCRCIDR": {
                     "default": "XDCR CIDR"
                 },
+                "VPCCIDR": {
+                    "default": "VPC CIDR"
+                },
+                "VPCID": {
+                    "default": "VPC ID"
+                },
                 "KeyName": {
                     "default": "SSH Key Name"
                 },
@@ -85,9 +91,11 @@
                 "InstanceType": {
                     "default": "Couchbase Instance Type"
                 },
-
                 "ServerInstanceCount": {
                     "default": "Couchbase Instance Count"
+                },
+                "ServerDiskSize": {
+                    "default": "Server Disk Size"
                 },
                 "SyncGatewayInstanceCount": {
                     "default": "Number of Couchbase Sync Gateway Nodes"
@@ -168,7 +176,7 @@
             "Type": "String"
         },
         "License": {
-            "Description": "License model can be BYOL, HourlyPricing or None",
+            "Description": "License model can be BYOL, HourlyPricing",
             "Type": "String",
             "Default": "HourlyPricing",
             "AllowedValues": [
@@ -233,7 +241,7 @@
         "XDCRCIDR": {
             "AllowedPattern": "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\\/([0-9]|[1-2][0-9]|3[0-2]))$",
             "ConstraintDescription": "CIDR block parameter must be in the form x.x.x.x/x",
-            "Description": "The CIDR IP range that is permitted to access the instances for XDCR",
+            "Description": "The CIDR IP range that is permitted to access XDCR",
             "Type": "String"
         },
         "VPCCIDR": {
