@@ -218,36 +218,120 @@
     },
     "Mappings": {
         "CouchbaseServer": {
-          "us-east-1": { "BYOL": "ami-1642856c", "HourlyPricing": "ami-d64186ac" },
-          "us-east-2": { "BYOL": "ami-17c3ee72", "HourlyPricing": "ami-30c0ed55" },
-          "us-west-1": { "BYOL": "ami-2f41724f", "HourlyPricing": "ami-964675f6" },
-          "us-west-2": { "BYOL": "ami-e5c6039d", "HourlyPricing": "ami-43c3063b" },
-          "ca-central-1": { "BYOL": "ami-64259c00", "HourlyPricing": "ami-e9239a8d" },
-          "eu-central-1": { "BYOL": "ami-979a27f8", "HourlyPricing": "ami-48942927" },
-          "eu-west-1": { "BYOL": "ami-f99b4d80", "HourlyPricing": "ami-fb9b4d82" },
-          "eu-west-2": { "BYOL": "ami-762f3d12", "HourlyPricing": "ami-3d2c3e59" },
-          "ap-southeast-1": { "BYOL": "ami-1aed9279", "HourlyPricing": "ami-5eec933d" },
-          "ap-southeast-2": { "BYOL": "ami-0adf3c68", "HourlyPricing": "ami-78de3d1a" },
-          "ap-south-1": { "BYOL": "aami-934f0ffc", "HourlyPricing": "ami-7e4d0d11" },
-          "ap-northeast-1": { "BYOL": "ami-8966b6ef", "HourlyPricing": "ami-0367b765" },
-          "ap-northeast-2": { "BYOL": "ami-152df77b", "HourlyPricing": "ami-942ff5fa" },
-          "sa-east-1": { "BYOL": "ami-b0a7d8dc", "HourlyPricing": "ami-87acd3eb" }
+            "us-east-1": {
+                "BYOL": "ami-1642856c",
+                "HourlyPricing": "ami-d64186ac"
+            },
+            "us-east-2": {
+                "BYOL": "ami-17c3ee72",
+                "HourlyPricing": "ami-30c0ed55"
+            },
+            "us-west-1": {
+                "BYOL": "ami-2f41724f",
+                "HourlyPricing": "ami-964675f6"
+            },
+            "us-west-2": {
+                "BYOL": "ami-e5c6039d",
+                "HourlyPricing": "ami-43c3063b"
+            },
+            "ca-central-1": {
+                "BYOL": "ami-64259c00",
+                "HourlyPricing": "ami-e9239a8d"
+            },
+            "eu-central-1": {
+                "BYOL": "ami-979a27f8",
+                "HourlyPricing": "ami-48942927"
+            },
+            "eu-west-1": {
+                "BYOL": "ami-f99b4d80",
+                "HourlyPricing": "ami-fb9b4d82"
+            },
+            "eu-west-2": {
+                "BYOL": "ami-762f3d12",
+                "HourlyPricing": "ami-3d2c3e59"
+            },
+            "ap-southeast-1": {
+                "BYOL": "ami-1aed9279",
+                "HourlyPricing": "ami-5eec933d"
+            },
+            "ap-southeast-2": {
+                "BYOL": "ami-0adf3c68",
+                "HourlyPricing": "ami-78de3d1a"
+            },
+            "ap-south-1": {
+                "BYOL": "aami-934f0ffc",
+                "HourlyPricing": "ami-7e4d0d11"
+            },
+            "ap-northeast-1": {
+                "BYOL": "ami-8966b6ef",
+                "HourlyPricing": "ami-0367b765"
+            },
+            "ap-northeast-2": {
+                "BYOL": "ami-152df77b",
+                "HourlyPricing": "ami-942ff5fa"
+            },
+            "sa-east-1": {
+                "BYOL": "ami-b0a7d8dc",
+                "HourlyPricing": "ami-87acd3eb"
+            }
         },
         "CouchbaseSyncGateway": {
-          "us-east-1": { "BYOL": "ami-4219d238", "HourlyPricing": "ami-611bd01b" },
-          "us-east-2": { "BYOL": "ami-33456956", "HourlyPricing": "ami-aa4569cf" },
-          "us-west-1": { "BYOL": "ami-b52715d5", "HourlyPricing": "ami-f5271595" },
-          "us-west-2": { "BYOL": "ami-dfa263a7", "HourlyPricing": "ami-b79f5ecf" },
-          "ca-central-1": { "BYOL": "ami-42ec5426", "HourlyPricing": "ami-43ec5427" },
-          "eu-central-1": { "BYOL": "ami-c83a85a7", "HourlyPricing": "ami-843a85eb" },
-          "eu-west-1": { "BYOL": "ami-306dbf49", "HourlyPricing": "ami-fa6dbf83" },
-          "eu-west-2": { "BYOL": "ami-cca8baa8", "HourlyPricing": "ami-52a8ba36" },
-          "ap-southeast-1": { "BYOL": "ami-47a6dd24", "HourlyPricing": "ami-faa4df99" },
-          "ap-southeast-2": { "BYOL": "ami-cc40a2ae", "HourlyPricing": "ami-2d46a44f" },
-          "ap-south-1": { "BYOL": "ami-a54506ca", "HourlyPricing": "ami-66450609" },
-          "ap-northeast-1": { "BYOL": "ami-74c61812", "HourlyPricing": "ami-3fc81659" },
-          "ap-northeast-2": { "BYOL": "ami-d4cd68ba", "HourlyPricing": "ami-1ecf6a70" },
-          "sa-east-1": { "BYOL": "ami-42b3cd2e", "HourlyPricing": "ami-f1b0ce9d" }
+            "us-east-1": {
+                "BYOL": "ami-4219d238",
+                "HourlyPricing": "ami-611bd01b"
+            },
+            "us-east-2": {
+                "BYOL": "ami-33456956",
+                "HourlyPricing": "ami-aa4569cf"
+            },
+            "us-west-1": {
+                "BYOL": "ami-b52715d5",
+                "HourlyPricing": "ami-f5271595"
+            },
+            "us-west-2": {
+                "BYOL": "ami-dfa263a7",
+                "HourlyPricing": "ami-b79f5ecf"
+            },
+            "ca-central-1": {
+                "BYOL": "ami-42ec5426",
+                "HourlyPricing": "ami-43ec5427"
+            },
+            "eu-central-1": {
+                "BYOL": "ami-c83a85a7",
+                "HourlyPricing": "ami-843a85eb"
+            },
+            "eu-west-1": {
+                "BYOL": "ami-306dbf49",
+                "HourlyPricing": "ami-fa6dbf83"
+            },
+            "eu-west-2": {
+                "BYOL": "ami-cca8baa8",
+                "HourlyPricing": "ami-52a8ba36"
+            },
+            "ap-southeast-1": {
+                "BYOL": "ami-47a6dd24",
+                "HourlyPricing": "ami-faa4df99"
+            },
+            "ap-southeast-2": {
+                "BYOL": "ami-cc40a2ae",
+                "HourlyPricing": "ami-2d46a44f"
+            },
+            "ap-south-1": {
+                "BYOL": "ami-a54506ca",
+                "HourlyPricing": "ami-66450609"
+            },
+            "ap-northeast-1": {
+                "BYOL": "ami-74c61812",
+                "HourlyPricing": "ami-3fc81659"
+            },
+            "ap-northeast-2": {
+                "BYOL": "ami-d4cd68ba",
+                "HourlyPricing": "ami-1ecf6a70"
+            },
+            "sa-east-1": {
+                "BYOL": "ami-42b3cd2e",
+                "HourlyPricing": "ami-f1b0ce9d"
+            }
         }
     },
     "Conditions": {
@@ -716,34 +800,35 @@
                     }]
                 },
                 "Policies": [{
-                    "PolicyName": "CouchbasePolicy",
-                    "PolicyDocument": {
-                        "Version": "2012-10-17",
-                        "Statement": [{
-                            "Effect": "Allow",
-                            "Action": [
-                                "ec2:CreateTags",
-                                "ec2:DescribeTags",
-                                "ec2:DescribeInstances",
-                                "autoscaling:DescribeAutoScalingGroups"
-                            ],
-                            "Resource": "*"
-                        }]
-                    }
-                },
-                {
-                    "PolicyDocument": {
-                        "Version": "2012-10-17",
-                        "Statement": [{
-                            "Action": ["s3:GetObject"],
-                            "Resource": {
-                                "Fn::Sub": "arn:aws:s3:::${QSS3BucketName}/${QSS3KeyPrefix}*"
-                            },
-                            "Effect": "Allow"
-                        }]
+                        "PolicyName": "CouchbasePolicy",
+                        "PolicyDocument": {
+                            "Version": "2012-10-17",
+                            "Statement": [{
+                                "Effect": "Allow",
+                                "Action": [
+                                    "ec2:CreateTags",
+                                    "ec2:DescribeTags",
+                                    "ec2:DescribeInstances",
+                                    "autoscaling:DescribeAutoScalingGroups"
+                                ],
+                                "Resource": "*"
+                            }]
+                        }
                     },
-                    "PolicyName": "aws-quick-start-s3-policy"
-                }]
+                    {
+                        "PolicyDocument": {
+                            "Version": "2012-10-17",
+                            "Statement": [{
+                                "Action": ["s3:GetObject"],
+                                "Resource": {
+                                    "Fn::Sub": "arn:aws:s3:::${QSS3BucketName}/${QSS3KeyPrefix}*"
+                                },
+                                "Effect": "Allow"
+                            }]
+                        },
+                        "PolicyName": "aws-quick-start-s3-policy"
+                    }
+                ]
             }
         },
         "SyncGatewayELBSecurityGroup": {
