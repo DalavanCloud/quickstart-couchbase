@@ -1,6 +1,6 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
-    "Description": "AWS Deployment for Couchbase Enterprise, License: Apache 2.0 (Please do not remove) Oct,24,2017 (qs-1nq4cb8lb)",
+    "Description": "AWS Deployment for Couchbase Enterprise, License: Apache 2.0 (Please do not remove) Dec,7,2017 (qs-1nq4cb8lb)",
     "Metadata": {
         "AWS::CloudFormation::Interface": {
             "ParameterGroups": [{
