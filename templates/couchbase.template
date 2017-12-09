@@ -226,122 +226,38 @@
         }
     },
     "Mappings": {
-        "CouchbaseServer": {
-            "us-east-1": {
-                "BYOL": "ami-1642856c",
-                "HourlyPricing": "ami-d64186ac"
-            },
-            "us-east-2": {
-                "BYOL": "ami-17c3ee72",
-                "HourlyPricing": "ami-30c0ed55"
-            },
-            "us-west-1": {
-                "BYOL": "ami-2f41724f",
-                "HourlyPricing": "ami-964675f6"
-            },
-            "us-west-2": {
-                "BYOL": "ami-e5c6039d",
-                "HourlyPricing": "ami-43c3063b"
-            },
-            "ca-central-1": {
-                "BYOL": "ami-64259c00",
-                "HourlyPricing": "ami-e9239a8d"
-            },
-            "eu-central-1": {
-                "BYOL": "ami-979a27f8",
-                "HourlyPricing": "ami-48942927"
-            },
-            "eu-west-1": {
-                "BYOL": "ami-f99b4d80",
-                "HourlyPricing": "ami-fb9b4d82"
-            },
-            "eu-west-2": {
-                "BYOL": "ami-762f3d12",
-                "HourlyPricing": "ami-3d2c3e59"
-            },
-            "ap-southeast-1": {
-                "BYOL": "ami-1aed9279",
-                "HourlyPricing": "ami-5eec933d"
-            },
-            "ap-southeast-2": {
-                "BYOL": "ami-0adf3c68",
-                "HourlyPricing": "ami-78de3d1a"
-            },
-            "ap-south-1": {
-                "BYOL": "aami-934f0ffc",
-                "HourlyPricing": "ami-7e4d0d11"
-            },
-            "ap-northeast-1": {
-                "BYOL": "ami-8966b6ef",
-                "HourlyPricing": "ami-0367b765"
-            },
-            "ap-northeast-2": {
-                "BYOL": "ami-152df77b",
-                "HourlyPricing": "ami-942ff5fa"
-            },
-            "sa-east-1": {
-                "BYOL": "ami-b0a7d8dc",
-                "HourlyPricing": "ami-87acd3eb"
-            }
-        },
-        "CouchbaseSyncGateway": {
-            "us-east-1": {
-                "BYOL": "ami-4219d238",
-                "HourlyPricing": "ami-611bd01b"
-            },
-            "us-east-2": {
-                "BYOL": "ami-33456956",
-                "HourlyPricing": "ami-aa4569cf"
-            },
-            "us-west-1": {
-                "BYOL": "ami-b52715d5",
-                "HourlyPricing": "ami-f5271595"
-            },
-            "us-west-2": {
-                "BYOL": "ami-dfa263a7",
-                "HourlyPricing": "ami-b79f5ecf"
-            },
-            "ca-central-1": {
-                "BYOL": "ami-42ec5426",
-                "HourlyPricing": "ami-43ec5427"
-            },
-            "eu-central-1": {
-                "BYOL": "ami-c83a85a7",
-                "HourlyPricing": "ami-843a85eb"
-            },
-            "eu-west-1": {
-                "BYOL": "ami-306dbf49",
-                "HourlyPricing": "ami-fa6dbf83"
-            },
-            "eu-west-2": {
-                "BYOL": "ami-cca8baa8",
-                "HourlyPricing": "ami-52a8ba36"
-            },
-            "ap-southeast-1": {
-                "BYOL": "ami-47a6dd24",
-                "HourlyPricing": "ami-faa4df99"
-            },
-            "ap-southeast-2": {
-                "BYOL": "ami-cc40a2ae",
-                "HourlyPricing": "ami-2d46a44f"
-            },
-            "ap-south-1": {
-                "BYOL": "ami-a54506ca",
-                "HourlyPricing": "ami-66450609"
-            },
-            "ap-northeast-1": {
-                "BYOL": "ami-74c61812",
-                "HourlyPricing": "ami-3fc81659"
-            },
-            "ap-northeast-2": {
-                "BYOL": "ami-d4cd68ba",
-                "HourlyPricing": "ami-1ecf6a70"
-            },
-            "sa-east-1": {
-                "BYOL": "ami-42b3cd2e",
-                "HourlyPricing": "ami-f1b0ce9d"
-            }
-        }
+      "CouchbaseServer": {
+        "us-east-1": { "HourlyPricing": "ami-28439552", "BYOL": "ami-bf4791c5" },
+        "us-east-2": { "HourlyPricing": "ami-1f35197a", "BYOL": "ami-af361aca" },
+        "us-west-1": { "HourlyPricing": "ami-59bc8e39", "BYOL": "ami-4fbd8f2f" },
+        "us-west-2": { "HourlyPricing": "ami-9e5e9ee6", "BYOL": "ami-db5f9fa3" },
+        "ca-central-1": { "HourlyPricing": "ami-4bc8702f", "BYOL": "ami-eec8708a" },
+        "eu-central-1": { "HourlyPricing": "ami-052d936a", "BYOL": "ami-7c289613" },
+        "eu-west-1": { "HourlyPricing": "ami-e6b16e9f", "BYOL": "ami-09b06f70" },
+        "eu-west-2": { "HourlyPricing": "ami-8c6c71e8", "BYOL": "ami-806d70e4" },
+        "ap-southeast-1": { "HourlyPricing": "ami-94682df7", "BYOL": "ami-946b2ef7" },
+        "ap-southeast-2": { "HourlyPricing": "ami-e02fc282", "BYOL": "ami-292fc24b" },
+        "ap-south-1": { "HourlyPricing": "ami-13bffc7c", "BYOL": "ami-99c380f6" },
+        "ap-northeast-1": { "HourlyPricing": "ami-6962ba0f", "BYOL": "ami-236eb645" },
+        "ap-northeast-2": { "HourlyPricing": "ami-66852008", "BYOL": "ami-38ba1f56" },
+        "sa-east-1": { "HourlyPricing": "ami-b6c4bada", "BYOL": "ami-37c4ba5b" }
+      },
+      "CouchbaseSyncGateway": {
+        "us-east-1": { "HourlyPricing": "ami-944492ee", "BYOL": "ami-4440963e" },
+        "us-east-2": { "HourlyPricing": "ami-bd371bd8", "BYOL": "ami-62361a07" },
+        "us-west-1": { "HourlyPricing": "ami-58bc8e38", "BYOL": "ami-47bd8f27" },
+        "us-west-2": { "HourlyPricing": "ami-4860a030", "BYOL": "ami-c25e9eba" },
+        "ca-central-1": { "HourlyPricing": "ami-40c97124", "BYOL": "ami-e6ca7282" },
+        "eu-central-1": { "HourlyPricing": "ami-7b2d9314", "BYOL": "ami-5e2c9231" },
+        "eu-west-1": { "HourlyPricing": "ami-e3b26d9a", "BYOL": "ami-05b06f7c" },
+        "eu-west-2": { "HourlyPricing": "ami-146c7170", "BYOL": "ami-d9726fbd" },
+        "ap-southeast-1": { "HourlyPricing": "ami-8f6b2eec", "BYOL": "ami-96682df5" },
+        "ap-southeast-2": { "HourlyPricing": "ami-dd2dc0bf", "BYOL": "ami-5c2cc13e" },
+        "ap-south-1": { "HourlyPricing": "ami-79bffc16", "BYOL": "ami-39b8fb56" },
+        "ap-northeast-1": { "HourlyPricing": "ami-0660b860", "BYOL": "ami-d862babe" },
+        "ap-northeast-2": { "HourlyPricing": "ami-8eba1fe0", "BYOL": "ami-b2ba1fdc" },
+        "sa-east-1": { "HourlyPricing": "ami-d9c7b9b5", "BYOL": "ami-c8c4baa4" }
+      }
     },
     "Conditions": {
         "3Subnets": {
