@@ -1,6 +1,6 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
-    "Description": "Couchbase + QuickStart VPC (Master Template)",
+    "Description": "Couchbase + QuickStart VPC, Apache 2.0 (Please do not remove) Dec,8,2017 (qs-1nq4cb8l6)",
     "Metadata": {
         "AWS::CloudFormation::Interface": {
             "ParameterGroups": [{
@@ -73,7 +73,13 @@
                 "XDCRCIDR": {
                     "default": "XDCR CIDR"
                 },
-                "KeyName": {
+                "VPCCIDR": {
+                    "default": "VPC CIDR"
+                },
+                "VPCID": {
+                    "default": "VPC ID"
+                },
+                "KeyPairName": {
                     "default": "SSH Key Name"
                 },
                 "Username": {
@@ -85,9 +91,11 @@
                 "InstanceType": {
                     "default": "Couchbase Instance Type"
                 },
-
                 "ServerInstanceCount": {
                     "default": "Couchbase Instance Count"
+                },
+                "ServerDiskSize": {
+                    "default": "Server Disk Size"
                 },
                 "SyncGatewayInstanceCount": {
                     "default": "Number of Couchbase Sync Gateway Nodes"
@@ -168,13 +176,12 @@
             "Type": "String"
         },
         "License": {
-            "Description": "License model can be BYOL, HourlyPricing or None",
+            "Description": "License model can be BYOL, HourlyPricing",
             "Type": "String",
             "Default": "HourlyPricing",
             "AllowedValues": [
                 "HourlyPricing",
-                "BYOL",
-                "None"
+                "BYOL"
             ]
         },
         "Username": {
@@ -201,13 +208,13 @@
             "Type": "String"
         },
         "PublicSubnet3CIDR": {
-            "Default": "10.0.160.0/20",
-            "Description": "CIDR block for the private subnet 1 located in Availability Zone 3 (if required)",
+            "Default": "",
+            "Description": "CIDR block for the public subnet 3 located in Availability Zone 3 (if required)",
             "Type": "String"
         },
         "PublicSubnet4CIDR": {
-            "Default": "10.0.176.0/20",
-            "Description": "CIDR block for the private subnet 2 located in Availability Zone 4 (if required)",
+            "Default": "",
+            "Description": "CIDR block for the public subnet 4 located in Availability Zone 4 (if required)",
             "Type": "String"
         },
         "QSS3BucketName": {
@@ -233,7 +240,7 @@
         "XDCRCIDR": {
             "AllowedPattern": "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\\/([0-9]|[1-2][0-9]|3[0-2]))$",
             "ConstraintDescription": "CIDR block parameter must be in the form x.x.x.x/x",
-            "Description": "The CIDR IP range that is permitted to access the instances for XDCR",
+            "Description": "The CIDR IP range that is permitted to access XDCR",
             "Type": "String"
         },
         "VPCCIDR": {

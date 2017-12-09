@@ -24,7 +24,7 @@
     },
     {
         "ParameterKey": "Password",
-        "ParameterValue": "$[alfred_genpass_8A]"
+        "ParameterValue": "$[taskcat_genpass_8A]"
     },
     {
         "ParameterKey": "PublicSubnet1CIDR",
@@ -43,8 +43,28 @@
         "ParameterValue": "10.0.176.0/20"
     },
     {
+        "ParameterKey": "QSS3BucketName",
+        "ParameterValue": "$[taskcat_autobucket]"
+    },
+    {
+        "ParameterKey": "QSS3KeyPrefix",
+        "ParameterValue": "quickstart-couchbase/"
+    },
+    {
         "ParameterKey": "RemoteAccessCIDR",
-        "ParameterValue": "52.39.77.198/32"
+        "ParameterValue": "0.0.0.0/0"
+    },
+    {
+        "ParameterKey": "ServerDiskSize",
+        "ParameterValue": "100"
+    },
+    {
+        "ParameterKey": "ServerInstanceCount",
+        "ParameterValue": "4"
+    },
+    {
+        "ParameterKey": "SyncGatewayInstanceCount",
+        "ParameterValue": "2"
     },
     {
         "ParameterKey": "Username",
