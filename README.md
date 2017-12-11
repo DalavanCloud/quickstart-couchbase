@@ -1,20 +1,24 @@
-# Couchbase on the AWS Cloud
-This is the AWS QuickStart for Couchbase.  It contains a Cloud Formation Template (CFT) that creates Autoscaling Groups made up of Virtual Machines running the Couchbase AMIs for two products:
+# quickstart-couchbase
+## Couchbase on the AWS Cloud
 
-* Couchbase Server Enterprise Edition version 5.0.0
-* Couchbase Sync Gateway Enterprise Edition version  1.5.0
 
-The CFT also configures security groups and disks.
+This Quick Start automatically deploys Couchbase Server Enterprise Edition and Couchbase Sync Gateway Enterprise Edition into your Amazon Web Services (AWS) account.
 
-Before you launch the Quick Start, please review the architecture, configuration, network security, and other considerations discussed in the Deployment Guide.
+Couchbase Server is a NoSQL database designed with a distributed architecture for performance, scalability, and availability. It enables developers to build applications by leveraging the power of SQL with the flexibility of JSON. 
 
-* [Deployment Guide (PDF)](https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase%2BQuick%2BStart%2BGuide.pdf)
-* [Deployemnt Guide (Word)](https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase%2BQuick%2BStart%2BGuide.docx)
+The Quick Start offers two deployment options:
 
-A diagram showing the resulting configuration is below:
+- Deploying Couchbase into a new virtual private cloud (VPC) that's configured for security, scalability, and high availability 
+- Deploying Couchbase into an existing VPC in your AWS account
 
-![Quick Start Couchbase Design Architecture](https://s3-us-west-2.amazonaws.com/cs-couchbase-quickstart/Couchbase-Quick+Start+architecture+diagram.png)
+You can also use the AWS CloudFormation templates as a starting point for your own implementation.
 
-To post feedback, submit feature ideas, or report bugs, use the Issues section of this GitHub repo.
+![Quick Start architecture for Couchbase on AWS](https://d0.awsstatic.com/partner-network/QuickStart/datasheets/couchbase-architecture-on-aws.png)
+
+The deployment and configuration tasks are automated by AWS CloudFormation templates that you can customize during launch. The deployment guide provides architectural details and step-by-step deployment instructions.
+
+For architectural details, step-by-step instructions, and customization options, see the [deployment guide](https://s3.amazonaws.com/quickstart-reference/couchbase/latest/doc/couchbase-on-the-aws-cloud.pdf).
+
+To post feedback, submit feature ideas, or report bugs, use the **Issues** section of this GitHub repo.
 
 If you'd like to submit code for this Quick Start, please review the [AWS Quick Start Contributor's Kit](https://aws-quickstart.github.io/).
