@@ -18,34 +18,34 @@
                     "VPCCIDR"
                 ]
             }, {
-                "Label": {
-                    "default": "Amazon EC2 Configuration"
-                },
-                "Parameters": [
-                    "KeyName",
-                    "InstanceType"
-                ]
+            "Label": {
+                "default": "Amazon EC2 Configuration"
+            },
+            "Parameters": [
+                "KeyName",
+                "InstanceType"
+            ]
             }, {
-                "Label": {
-                    "default": "Couchbase Configuration"
-                },
-                "Parameters": [
-                    "Username",
-                    "Password",
-                    "ServerDiskSize",
-                    "ServerInstanceCount",
-                    "SyncGatewayInstanceCount",
-                    "EncryptEBS",
-                    "License"
-                ]
+            "Label": {
+                "default": "Couchbase Configuration"
+            },
+            "Parameters": [
+                "Username",
+                "Password",
+                "ServerDiskSize",
+                "ServerInstanceCount",
+                "SyncGatewayInstanceCount",
+                "EncryptEBS",
+                "License"
+            ]
             }, {
-                "Label": {
-                    "default": "AWS Quick Start Configuration"
-                },
-                "Parameters": [
-                    "QSS3BucketName",
-                    "QSS3KeyPrefix"
-                ]
+            "Label": {
+                "default": "AWS Quick Start Configuration"
+            },
+            "Parameters": [
+                "QSS3BucketName",
+                "QSS3KeyPrefix"
+            ]
             }],
             "ParameterLabels": {
                 "QSS3BucketName": {
@@ -192,14 +192,14 @@
         "QSS3BucketName": {
             "AllowedPattern": "^[0-9a-zA-Z]+([0-9a-zA-Z-]*[0-9a-zA-Z])*$",
             "ConstraintDescription": "Quick Start bucket name can include numbers, lowercase letters, uppercase letters, and hyphens (-). It cannot start or end with a hyphen (-).",
-            "Default": "quickstart-reference",
+            "Default": "aws-quickstart",
             "Description": "S3 bucket name for the Quick Start assets. This string can include numbers, lowercase letters, uppercase letters, and hyphens (-). It cannot start or end with a hyphen (-).",
             "Type": "String"
         },
         "QSS3KeyPrefix": {
             "AllowedPattern": "^[0-9a-zA-Z-/]*$",
             "ConstraintDescription": "Quick Start key prefix can include numbers, lowercase letters, uppercase letters, hyphens (-), and forward slash (/).",
-            "Default": "couchbase/latest/",
+            "Default": "quickstart-couchbase/",
             "Description": "S3 key prefix for the Quick Start assets. Quick Start key prefix can include numbers, lowercase letters, uppercase letters, hyphens (-), and forward slash (/).",
             "Type": "String"
         },
@@ -226,57 +226,57 @@
         }
     },
     "Mappings": {
-      "CouchbaseServer": {
-        "us-east-1": { "BYOL": "ami-a693a3dc", "HourlyPricing": "ami-ef95a595" },
-        "us-east-2": { "BYOL": "ami-d97441bc", "HourlyPricing": "ami-62764307" },
-        "us-west-1": { "BYOL": "ami-cf8c81af", "HourlyPricing": "ami-c08c81a0" },
-        "us-west-2": { "BYOL": "ami-269c235e", "HourlyPricing": "ami-49a11e31" },
-        "ca-central-1": { "BYOL": "ami-9822a7fc", "HourlyPricing": "ami-2e22a74a" },
-        "eu-central-1": { "BYOL": "ami-8438a1eb", "HourlyPricing": "ami-9939a0f6" },
-        "eu-west-1": { "BYOL": "ami-078aed7e", "HourlyPricing": "ami-7797f00e" },
-        "eu-west-2": { "BYOL": "ami-dd455fb9", "HourlyPricing": "ami-be7b61da" },
-        "eu-west-3": { "BYOL": "ami-d5dd6ba8", "HourlyPricing": "ami-5bc77126" },
-        "ap-southeast-1": { "BYOL": "ami-33ec944f", "HourlyPricing": "ami-13eb936f" },
-        "ap-southeast-2": { "BYOL": "ami-8910eeeb", "HourlyPricing": "ami-ec11ef8e" },
-        "ap-south-1": { "BYOL": "aami-0d8ddc62", "HourlyPricing": "ami-5db1e032" },
-        "ap-northeast-1": { "BYOL": "ami-b0e489d6", "HourlyPricing": "ami-47e48921" },
-        "ap-northeast-2": { "BYOL": "ami-ec8d2e82", "HourlyPricing": "ami-e78c2f89" },
-        "sa-east-1": { "BYOL": "ami-995519f5", "HourlyPricing": "ami-f5551999" }
-      },
-      "CouchbaseSyncGateway": {
-        "us-east-1": { "BYOL": "ami-8294a4f8", "HourlyPricing": "ami-6d93a317" },
-        "us-east-2": { "BYOL": "ami-0877426d", "HourlyPricing": "ami-0f75406a" },
-        "us-west-1": { "BYOL": "ami-288c8148", "HourlyPricing": "ami-76f2ff16" },
-        "us-west-2": { "BYOL": "ami-589c2320", "HourlyPricing": "ami-41a01f39" },
-        "ca-central-1": { "BYOL": "ami-ad20a5c9", "HourlyPricing": "ami-c22da8a6" },
-        "eu-central-1": { "BYOL": "ami-103aa37f", "HourlyPricing": "ami-d5069fba" },
-        "eu-west-1": { "BYOL": "ami-b696f1cf", "HourlyPricing": "ami-c293f4bb" },
-        "eu-west-2": { "BYOL": "ami-6c445e08", "HourlyPricing": "ami-11445e75" },
-        "eu-west-3": { "BYOL": "ami-c9d86eb4", "HourlyPricing": "ami-58c77125" },
-        "ap-southeast-1": { "BYOL": "ami-10eb936c", "HourlyPricing": "ami-a4ed95d8" },
-        "ap-southeast-2": { "BYOL": "ami-a610eec4", "HourlyPricing": "ami-2911ef4b" },
-        "ap-south-1": { "BYOL": "ami-898cdde6", "HourlyPricing": "ami-058cdd6a" },
-        "ap-northeast-1": { "BYOL": "ami-b9e588df", "HourlyPricing": "ami-b3e588d5" },
-        "ap-northeast-2": { "BYOL": "ami-38933056", "HourlyPricing": "ami-648c2f0a" },
-        "sa-east-1": { "BYOL": "ami-3654185a", "HourlyPricing": "ami-b95a16d5" }
-      }
+        "CouchbaseServer": {
+            "us-east-1": { "BYOL": "ami-a693a3dc", "HourlyPricing": "ami-ef95a595" },
+            "us-east-2": { "BYOL": "ami-d97441bc", "HourlyPricing": "ami-62764307" },
+            "us-west-1": { "BYOL": "ami-cf8c81af", "HourlyPricing": "ami-c08c81a0" },
+            "us-west-2": { "BYOL": "ami-269c235e", "HourlyPricing": "ami-49a11e31" },
+            "ca-central-1": { "BYOL": "ami-9822a7fc", "HourlyPricing": "ami-2e22a74a" },
+            "eu-central-1": { "BYOL": "ami-8438a1eb", "HourlyPricing": "ami-9939a0f6" },
+            "eu-west-1": { "BYOL": "ami-078aed7e", "HourlyPricing": "ami-7797f00e" },
+            "eu-west-2": { "BYOL": "ami-dd455fb9", "HourlyPricing": "ami-be7b61da" },
+            "eu-west-3": { "BYOL": "ami-d5dd6ba8", "HourlyPricing": "ami-5bc77126" },
+            "ap-southeast-1": { "BYOL": "ami-33ec944f", "HourlyPricing": "ami-13eb936f" },
+            "ap-southeast-2": { "BYOL": "ami-8910eeeb", "HourlyPricing": "ami-ec11ef8e" },
+            "ap-south-1": { "BYOL": "aami-0d8ddc62", "HourlyPricing": "ami-5db1e032" },
+            "ap-northeast-1": { "BYOL": "ami-b0e489d6", "HourlyPricing": "ami-47e48921" },
+            "ap-northeast-2": { "BYOL": "ami-ec8d2e82", "HourlyPricing": "ami-e78c2f89" },
+            "sa-east-1": { "BYOL": "ami-995519f5", "HourlyPricing": "ami-f5551999" }
+        },
+        "CouchbaseSyncGateway": {
+            "us-east-1": { "BYOL": "ami-8294a4f8", "HourlyPricing": "ami-6d93a317" },
+            "us-east-2": { "BYOL": "ami-0877426d", "HourlyPricing": "ami-0f75406a" },
+            "us-west-1": { "BYOL": "ami-288c8148", "HourlyPricing": "ami-76f2ff16" },
+            "us-west-2": { "BYOL": "ami-589c2320", "HourlyPricing": "ami-41a01f39" },
+            "ca-central-1": { "BYOL": "ami-ad20a5c9", "HourlyPricing": "ami-c22da8a6" },
+            "eu-central-1": { "BYOL": "ami-103aa37f", "HourlyPricing": "ami-d5069fba" },
+            "eu-west-1": { "BYOL": "ami-b696f1cf", "HourlyPricing": "ami-c293f4bb" },
+            "eu-west-2": { "BYOL": "ami-6c445e08", "HourlyPricing": "ami-11445e75" },
+            "eu-west-3": { "BYOL": "ami-c9d86eb4", "HourlyPricing": "ami-58c77125" },
+            "ap-southeast-1": { "BYOL": "ami-10eb936c", "HourlyPricing": "ami-a4ed95d8" },
+            "ap-southeast-2": { "BYOL": "ami-a610eec4", "HourlyPricing": "ami-2911ef4b" },
+            "ap-south-1": { "BYOL": "ami-898cdde6", "HourlyPricing": "ami-058cdd6a" },
+            "ap-northeast-1": { "BYOL": "ami-b9e588df", "HourlyPricing": "ami-b3e588d5" },
+            "ap-northeast-2": { "BYOL": "ami-38933056", "HourlyPricing": "ami-648c2f0a" },
+            "sa-east-1": { "BYOL": "ami-3654185a", "HourlyPricing": "ami-b95a16d5" }
+        }
     },
     "Conditions": {
         "3Subnets": {
             "Fn::Not": [{
                 "Fn::Equals": [{
-                        "Ref": "PublicSubnet3ID"
-                    },
-                    ""
+                    "Ref": "PublicSubnet3ID"
+                },
+                ""
                 ]
             }]
         },
         "4Subnets": {
             "Fn::Not": [{
                 "Fn::Equals": [{
-                        "Ref": "PublicSubnet4ID"
-                    },
-                    ""
+                    "Ref": "PublicSubnet4ID"
+                },
+                ""
                 ]
             }]
         }
@@ -322,13 +322,13 @@
                                 "content": {
                                     "Fn::Join": [
                                         "", [{
-                                                "Ref": "Username"
-                                            },
-                                            "\n",
-                                            {
-                                                "Ref": "Password"
-                                            },
-                                            "\n"
+                                            "Ref": "Username"
+                                        },
+                                        "\n",
+                                        {
+                                            "Ref": "Password"
+                                        },
+                                        "\n"
                                         ]
                                     ]
                                 },
@@ -372,33 +372,33 @@
                 },
 
                 "VPCZoneIdentifier": [{
-                        "Ref": "PublicSubnet1ID"
-                    },
-                    {
-                        "Ref": "PublicSubnet2ID"
-                    },
-                    {
-                        "Fn::If": [
-                            "3Subnets",
-                            {
-                                "Ref": "PublicSubnet3ID"
-                            },
-                            {
-                                "Ref": "AWS::NoValue"
-                            }
-                        ]
-                    },
-                    {
-                        "Fn::If": [
-                            "4Subnets",
-                            {
-                                "Ref": "PublicSubnet4ID"
-                            },
-                            {
-                                "Ref": "AWS::NoValue"
-                            }
-                        ]
-                    }
+                    "Ref": "PublicSubnet1ID"
+                },
+                {
+                    "Ref": "PublicSubnet2ID"
+                },
+                {
+                    "Fn::If": [
+                        "3Subnets",
+                        {
+                            "Ref": "PublicSubnet3ID"
+                        },
+                        {
+                            "Ref": "AWS::NoValue"
+                        }
+                    ]
+                },
+                {
+                    "Fn::If": [
+                        "4Subnets",
+                        {
+                            "Ref": "PublicSubnet4ID"
+                        },
+                        {
+                            "Ref": "AWS::NoValue"
+                        }
+                    ]
+                }
                 ]
             },
             "CreationPolicy": {
@@ -428,11 +428,11 @@
                     "Ref": "InstanceType"
                 },
                 "SecurityGroups": [{
-                        "Ref": "CouchbaseSecurityGroup"
-                    },
-                    {
-                        "Ref": "XDCRSecurityGroup"
-                    }
+                    "Ref": "CouchbaseSecurityGroup"
+                },
+                {
+                    "Ref": "XDCRSecurityGroup"
+                }
                 ],
                 "KeyName": {
                     "Ref": "KeyName"
@@ -442,23 +442,23 @@
                     "Ref": "CouchbaseInstanceProfile"
                 },
                 "BlockDeviceMappings": [{
-                        "DeviceName": "/dev/xvda",
-                        "Ebs": {
-                            "DeleteOnTermination": true
-                        }
-                    },
-                    {
-                        "DeviceName": "/dev/sdk",
-                        "Ebs": {
-                            "VolumeSize": {
-                                "Ref": "ServerDiskSize"
-                            },
-                            "Encrypted": {
-                                "Ref": "EncryptEBS"
-                            },
-                            "VolumeType": "gp2"
-                        }
+                    "DeviceName": "/dev/xvda",
+                    "Ebs": {
+                        "DeleteOnTermination": true
                     }
+                },
+                {
+                    "DeviceName": "/dev/sdk",
+                    "Ebs": {
+                        "VolumeSize": {
+                            "Ref": "ServerDiskSize"
+                        },
+                        "Encrypted": {
+                            "Ref": "EncryptEBS"
+                        },
+                        "VolumeType": "gp2"
+                    }
+                }
                 ],
                 "UserData": {
                     "Fn::Base64": {
@@ -503,33 +503,33 @@
                     "Ref": "SyncGatewayELB"
                 }],
                 "VPCZoneIdentifier": [{
-                        "Ref": "PublicSubnet1ID"
-                    },
-                    {
-                        "Ref": "PublicSubnet2ID"
-                    },
-                    {
-                        "Fn::If": [
-                            "3Subnets",
-                            {
-                                "Ref": "PublicSubnet3ID"
-                            },
-                            {
-                                "Ref": "AWS::NoValue"
-                            }
-                        ]
-                    },
-                    {
-                        "Fn::If": [
-                            "4Subnets",
-                            {
-                                "Ref": "PublicSubnet4ID"
-                            },
-                            {
-                                "Ref": "AWS::NoValue"
-                            }
-                        ]
-                    }
+                    "Ref": "PublicSubnet1ID"
+                },
+                {
+                    "Ref": "PublicSubnet2ID"
+                },
+                {
+                    "Fn::If": [
+                        "3Subnets",
+                        {
+                            "Ref": "PublicSubnet3ID"
+                        },
+                        {
+                            "Ref": "AWS::NoValue"
+                        }
+                    ]
+                },
+                {
+                    "Fn::If": [
+                        "4Subnets",
+                        {
+                            "Ref": "PublicSubnet4ID"
+                        },
+                        {
+                            "Ref": "AWS::NoValue"
+                        }
+                    ]
+                }
                 ]
             },
             "CreationPolicy": {
@@ -654,17 +654,17 @@
                     "UnhealthyThreshold": "10"
                 },
                 "Listeners": [{
-                        "InstancePort": "4984",
-                        "InstanceProtocol": "HTTP",
-                        "LoadBalancerPort": "4984",
-                        "Protocol": "HTTP"
-                    },
-                    {
-                        "InstancePort": "4985",
-                        "InstanceProtocol": "HTTP",
-                        "LoadBalancerPort": "4985",
-                        "Protocol": "HTTP"
-                    }
+                    "InstancePort": "4984",
+                    "InstanceProtocol": "HTTP",
+                    "LoadBalancerPort": "4984",
+                    "Protocol": "HTTP"
+                },
+                {
+                    "InstancePort": "4985",
+                    "InstanceProtocol": "HTTP",
+                    "LoadBalancerPort": "4985",
+                    "Protocol": "HTTP"
+                }
                 ],
                 "Tags": [{
                     "Key": "Name",
@@ -672,33 +672,33 @@
                 }],
                 "Scheme": "internet-facing",
                 "Subnets": [{
-                        "Ref": "PublicSubnet1ID"
-                    },
-                    {
-                        "Ref": "PublicSubnet2ID"
-                    },
-                    {
-                        "Fn::If": [
-                            "3Subnets",
-                            {
-                                "Ref": "PublicSubnet3ID"
-                            },
-                            {
-                                "Ref": "AWS::NoValue"
-                            }
-                        ]
-                    },
-                    {
-                        "Fn::If": [
-                            "4Subnets",
-                            {
-                                "Ref": "PublicSubnet4ID"
-                            },
-                            {
-                                "Ref": "AWS::NoValue"
-                            }
-                        ]
-                    }
+                    "Ref": "PublicSubnet1ID"
+                },
+                {
+                    "Ref": "PublicSubnet2ID"
+                },
+                {
+                    "Fn::If": [
+                        "3Subnets",
+                        {
+                            "Ref": "PublicSubnet3ID"
+                        },
+                        {
+                            "Ref": "AWS::NoValue"
+                        }
+                    ]
+                },
+                {
+                    "Fn::If": [
+                        "4Subnets",
+                        {
+                            "Ref": "PublicSubnet4ID"
+                        },
+                        {
+                            "Ref": "AWS::NoValue"
+                        }
+                    ]
+                }
                 ],
                 "SecurityGroups": [{
                     "Ref": "SyncGatewayELBSecurityGroup"
@@ -727,34 +727,34 @@
                     }]
                 },
                 "Policies": [{
-                        "PolicyName": "CouchbasePolicy",
-                        "PolicyDocument": {
-                            "Version": "2012-10-17",
-                            "Statement": [{
-                                "Effect": "Allow",
-                                "Action": [
-                                    "ec2:CreateTags",
-                                    "ec2:DescribeTags",
-                                    "ec2:DescribeInstances",
-                                    "autoscaling:DescribeAutoScalingGroups"
-                                ],
-                                "Resource": "*"
-                            }]
-                        }
-                    },
-                    {
-                        "PolicyDocument": {
-                            "Version": "2012-10-17",
-                            "Statement": [{
-                                "Action": ["s3:GetObject"],
-                                "Resource": {
-                                    "Fn::Sub": "arn:aws:s3:::${QSS3BucketName}/${QSS3KeyPrefix}*"
-                                },
-                                "Effect": "Allow"
-                            }]
-                        },
-                        "PolicyName": "aws-quick-start-s3-policy"
+                    "PolicyName": "CouchbasePolicy",
+                    "PolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [{
+                            "Effect": "Allow",
+                            "Action": [
+                                "ec2:CreateTags",
+                                "ec2:DescribeTags",
+                                "ec2:DescribeInstances",
+                                "autoscaling:DescribeAutoScalingGroups"
+                            ],
+                            "Resource": "*"
+                        }]
                     }
+                },
+                {
+                    "PolicyDocument": {
+                        "Version": "2012-10-17",
+                        "Statement": [{
+                            "Action": ["s3:GetObject"],
+                            "Resource": {
+                                "Fn::Sub": "arn:aws:s3:::${QSS3BucketName}/${QSS3KeyPrefix}*"
+                            },
+                            "Effect": "Allow"
+                        }]
+                    },
+                    "PolicyName": "aws-quick-start-s3-policy"
+                }
                 ]
             }
         },
@@ -783,21 +783,21 @@
                     "Ref": "VPCID"
                 },
                 "SecurityGroupIngress": [{
-                        "IpProtocol": "tcp",
-                        "FromPort": 22,
-                        "ToPort": 22,
-                        "CidrIp": {
-                            "Ref": "RemoteAccessCIDR"
-                        }
-                    },
-                    {
-                        "IpProtocol": "tcp",
-                        "FromPort": 4984,
-                        "ToPort": 4985,
-                        "SourceSecurityGroupId": {
-                            "Ref": "SyncGatewayELBSecurityGroup"
-                        }
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "CidrIp": {
+                        "Ref": "RemoteAccessCIDR"
                     }
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 4984,
+                    "ToPort": 4985,
+                    "SourceSecurityGroupId": {
+                        "Ref": "SyncGatewayELBSecurityGroup"
+                    }
+                }
                 ]
             }
         },
@@ -816,54 +816,54 @@
                         "Ref": "RemoteAccessCIDR"
                     }
                 }, {
-                    "IpProtocol": "tcp",
-                    "FromPort": 4369,
-                    "ToPort": 4369,
-                    "CidrIp": {
-                        "Ref": "RemoteAccessCIDR"
-                    }
+                "IpProtocol": "tcp",
+                "FromPort": 4369,
+                "ToPort": 4369,
+                "CidrIp": {
+                    "Ref": "RemoteAccessCIDR"
+                }
                 }, {
-                    "IpProtocol": "tcp",
-                    "FromPort": 9100,
-                    "ToPort": 9105,
-                    "CidrIp": {
-                        "Ref": "RemoteAccessCIDR"
-                    }
+                "IpProtocol": "tcp",
+                "FromPort": 9100,
+                "ToPort": 9105,
+                "CidrIp": {
+                    "Ref": "RemoteAccessCIDR"
+                }
                 }, {
-                    "IpProtocol": "tcp",
-                    "FromPort": 9998,
-                    "ToPort": 9999,
-                    "CidrIp": {
-                        "Ref": "RemoteAccessCIDR"
-                    }
+                "IpProtocol": "tcp",
+                "FromPort": 9998,
+                "ToPort": 9999,
+                "CidrIp": {
+                    "Ref": "RemoteAccessCIDR"
+                }
                 }, {
-                    "IpProtocol": "tcp",
-                    "FromPort": 11207,
-                    "ToPort": 11215,
-                    "CidrIp": {
-                        "Ref": "RemoteAccessCIDR"
-                    }
+                "IpProtocol": "tcp",
+                "FromPort": 11207,
+                "ToPort": 11215,
+                "CidrIp": {
+                    "Ref": "RemoteAccessCIDR"
+                }
                 }, {
-                    "IpProtocol": "tcp",
-                    "FromPort": 18091,
-                    "ToPort": 18093,
-                    "CidrIp": {
-                        "Ref": "RemoteAccessCIDR"
-                    }
+                "IpProtocol": "tcp",
+                "FromPort": 18091,
+                "ToPort": 18093,
+                "CidrIp": {
+                    "Ref": "RemoteAccessCIDR"
+                }
                 }, {
-                    "IpProtocol": "tcp",
-                    "FromPort": 21100,
-                    "ToPort": 21299,
-                    "CidrIp": {
-                        "Ref": "RemoteAccessCIDR"
-                    }
+                "IpProtocol": "tcp",
+                "FromPort": 21100,
+                "ToPort": 21299,
+                "CidrIp": {
+                    "Ref": "RemoteAccessCIDR"
+                }
                 }, {
-                    "IpProtocol": "tcp",
-                    "FromPort": "0",
-                    "ToPort": "65535",
-                    "CidrIp": {
-                        "Ref": "VPCCIDR"
-                    }
+                "IpProtocol": "tcp",
+                "FromPort": "0",
+                "ToPort": "65535",
+                "CidrIp": {
+                    "Ref": "VPCCIDR"
+                }
                 }]
             }
         },
@@ -875,21 +875,21 @@
                     "Ref": "VPCID"
                 },
                 "SecurityGroupIngress": [{
-                        "IpProtocol": "tcp",
-                        "FromPort": 18091,
-                        "ToPort": 18093,
-                        "CidrIp": {
-                            "Ref": "RemoteAccessCIDR"
-                        }
-                    },
-                    {
-                        "IpProtocol": "tcp",
-                        "FromPort": "0",
-                        "ToPort": "65535",
-                        "CidrIp": {
-                            "Ref": "VPCCIDR"
-                        }
+                    "IpProtocol": "tcp",
+                    "FromPort": 18091,
+                    "ToPort": 18093,
+                    "CidrIp": {
+                        "Ref": "RemoteAccessCIDR"
                     }
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": "0",
+                    "ToPort": "65535",
+                    "CidrIp": {
+                        "Ref": "VPCCIDR"
+                    }
+                }
                 ]
             }
         }
