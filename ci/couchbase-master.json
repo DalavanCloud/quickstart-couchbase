@@ -1,6 +1,6 @@
 [{
         "ParameterKey": "AvailabilityZones",
-        "ParameterValue": "$[alfred_getaz_2]"
+        "ParameterValue": "$[taskcat_genaz_2]"
     },
     {
         "ParameterKey": "EncryptEBS",
@@ -24,27 +24,11 @@
     },
     {
         "ParameterKey": "Password",
-        "ParameterValue": "$[alfred_genpass_8A]"
-    },
-    {
-        "ParameterKey": "PublicSubnet1CIDR",
-        "ParameterValue": "10.0.128.0/20"
-    },
-    {
-        "ParameterKey": "PublicSubnet2CIDR",
-        "ParameterValue": "10.0.144.0/20"
-    },
-    {
-        "ParameterKey": "PublicSubnet3CIDR",
-        "ParameterValue": "10.0.160.0/20"
-    },
-    {
-        "ParameterKey": "PublicSubnet4CIDR",
-        "ParameterValue": "10.0.176.0/20"
+        "ParameterValue": "$[taskcat_genpass_8A]"
     },
     {
         "ParameterKey": "RemoteAccessCIDR",
-        "ParameterValue": "52.39.77.198/32"
+        "ParameterValue": "10.0.0.0/16"
     },
     {
         "ParameterKey": "Username",
