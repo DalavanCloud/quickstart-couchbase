@@ -17,7 +17,7 @@ You can also use the AWS CloudFormation templates as a starting point for your o
 
 The deployment and configuration tasks are automated by AWS CloudFormation templates that you can customize during launch. The deployment guide provides architectural details and step-by-step deployment instructions.
 
-For architectural details, step-by-step instructions, and customization options, see the [deployment guide](https://s3.amazonaws.com/quickstart-reference/couchbase/latest/doc/couchbase-on-the-aws-cloud.pdf).
+For architectural details, step-by-step instructions, and customization options, see the [deployment guide](https://fwd.aws/xqVPm).
 
 To post feedback, submit feature ideas, or report bugs, use the **Issues** section of this GitHub repo.
 
