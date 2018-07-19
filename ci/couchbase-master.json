@@ -41,5 +41,9 @@
     {
         "ParameterKey": "XDCRCIDR",
         "ParameterValue": "0.0.0.0/0"
+    },
+    {
+        "ParameterKey":"QSS3BucketName",
+        "ParameterValue":"$[taskcat_autobucket]"
     }
 ]
